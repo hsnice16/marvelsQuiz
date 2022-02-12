@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+:root {
+  --COLOR-PRIMARY: #3b82f6;
+  --COLOR-PRIMARY-50: #eff6ff;
+  --COLOR-PRIMARY-300: #93c5fd;
+  --COLOR-PRIMARY-800: #1e40af;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--COLOR-PRIMARY-50);
+  font-size: 1.6rem;
+}
+
+/** Container **/
+
+.container {
+  color: var(--COLOR-SLATE-700);
+  margin: auto;
+  max-width: 120rem;
+}
+
+/** Footer **/
+
+.footer-home {
+  border-top: thin solid var(--COLOR-PRIMARY-300);
+  min-height: 15vh;
+}
+
+/** Link **/
+
+.link {
+  color: var(--COLOR-PRIMARY-800);
+  font-size: 2rem;
+  position: relative;
+}
+
+.link::after {
+  background: var(--COLOR-PRIMARY);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s, left 0.3s;
+  width: 0;
+}
+
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/** Main **/
+
+.main {
+  min-height: 75vh;
+}
+
+/** Main and Nav  **/
+
+blockquote::before,
+blockquote::after,
+nav > a::after {
+  content: "";
+  height: 0.5rem;
+  width: 7rem;
+  background: var(--COLOR-SLATE-500);
+  display: block;
+}
+
+/** Utility **/
+
+.kushan-font-family {
+  font-family: "Kaushan Script", cursive;
+}
+
+.text-primary {
+  color: var(--COLOR-PRIMARY);
+}
+
+.text-primary-800 {
+  color: var(--COLOR-PRIMARY-800);
+}
