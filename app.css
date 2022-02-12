@@ -17,6 +17,31 @@ body {
   font-size: 1.6rem;
 }
 
+/** Button **/
+
+.angle-icon {
+  transition: transform 0.2s;
+}
+
+.btn-game-begin {
+  background-color: var(--COLOR-PRIMARY);
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--COLOR-WHITE);
+  display: block;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+  padding: 2rem;
+}
+
+.btn-game-begin:hover {
+  background-color: var(--COLOR-PRIMARY-800);
+}
+
+.btn-game-begin:hover .angle-icon {
+  transform: translateX(25%);
+}
+
 /** Container **/
 
 .container {
@@ -66,7 +91,9 @@ body {
 
 blockquote::before,
 blockquote::after,
-nav > a::after {
+nav > a::after,
+.nice-para::before,
+.nice-para::after {
   content: "";
   height: 0.5rem;
   width: 7rem;
@@ -75,6 +102,14 @@ nav > a::after {
 }
 
 /** Utility **/
+
+.align-i-fs {
+  align-items: flex-start;
+}
+
+.border-primary {
+  border-color: var(--COLOR-PRIMARY);
+}
 
 .kushan-font-family {
   font-family: "Kaushan Script", cursive;

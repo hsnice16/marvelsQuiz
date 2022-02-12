@@ -66,6 +66,12 @@
           >
         </div>
 
+        <img
+          class="block mx-auto w-33"
+          src="assets/gifs/love-u-3000.gif"
+          alt="giphy love u 300 gif"
+        />
+
         <blockquote
           class="align-i-ctr flex flex-direction-col fs-lg justify-c-sb my-3 text-center"
         >
@@ -81,6 +87,7 @@
 
           <div class="align-i-ctr flex flex-wrap gap-2p5 justify-c-sa p-4">
             <div
+              id="category-avengers-infinity-war"
               class="card card-text-overlay card-vertical overflow-hidden shadow-light w-33"
             >
               <img
@@ -96,13 +103,14 @@
               <h2 class="card-head fs-2">Avengers: Infinity War</h2>
               <p class="card-text mb-1p5">
                 Play this quiz, if you think you know all about
-                <em>Avengers: infinity War</em>
+                <em>Avengers: Infinity War</em>
 
                 <span class="block fw-800 mt-1">5 Questions</span>
               </p>
             </div>
 
             <div
+              id="category-doctor-strange"
               class="card card-text-overlay card-vertical overflow-hidden shadow-light w-33"
             >
               <img
@@ -125,6 +133,7 @@
             </div>
 
             <div
+              id="category-captain-marvel"
               class="card card-text-overlay card-vertical overflow-hidden shadow-light w-33"
             >
               <img
@@ -190,5 +199,25 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document
+        .querySelector("#category-avengers-infinity-war")
+        .addEventListener("click", () => {
+          window.open("pages/avengers-infinity-war/rules.html", "_self");
+        });
+
+      document
+        .querySelector("#category-doctor-strange")
+        .addEventListener("click", () => {
+          window.open("pages/doctor-strange/rules.html", "_self");
+        });
+
+      document
+        .querySelector("#category-captain-marvel")
+        .addEventListener("click", () => {
+          window.open("pages/captain-marvel/rules.html", "_self");
+        });
+    </script>
   </body>
 </html>
