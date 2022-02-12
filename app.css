@@ -50,6 +50,12 @@ body {
   max-width: 120rem;
 }
 
+.container-question {
+  margin: auto;
+  max-width: 80rem;
+  padding: 2rem;
+}
+
 /** Footer **/
 
 .footer-home {
@@ -81,6 +87,14 @@ body {
   width: 100%;
 }
 
+.link:hover .left-angle-icon {
+  transform: translateX(-25%);
+}
+
+.link:hover .right-angle-icon {
+  transform: translateX(25%);
+}
+
 /** Main **/
 
 .main {
@@ -99,6 +113,12 @@ nav > a::after,
   width: 7rem;
   background: var(--COLOR-SLATE-500);
   display: block;
+}
+
+/** Option **/
+
+.option-li:hover {
+  transform: scale(1.01);
 }
 
 /** Utility **/
@@ -121,4 +141,8 @@ nav > a::after,
 
 .text-primary-800 {
   color: var(--COLOR-PRIMARY-800);
+}
+
+.text-slate-500 {
+  color: var(--COLOR-SLATE-500);
 }
