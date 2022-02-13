@@ -113,12 +113,20 @@
             </li>
           </ul>
 
-          <button class="btn-game-begin translate-y">
+          <button id="btn-begin-game" class="btn-game-begin translate-y">
             Let's begin the game
             <i class="angle-icon fas fa-angle-double-right"></i>
           </button>
         </section>
       </main>
     </div>
+
+    <script>
+      document
+        .querySelector("#btn-begin-game")
+        .addEventListener("click", () => {
+          window.open("question-one.html", "_self");
+        });
+    </script>
   </body>
 </html>
