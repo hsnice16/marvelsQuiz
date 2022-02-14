@@ -19,10 +19,11 @@ body {
 
 /** Button **/
 
-.angle-icon {
-  transition: transform 0.2s;
+.btn-back-home:hover .left-double-angle-icon {
+  transform: translateX(-25%);
 }
 
+.btn-back-home,
 .btn-game-begin {
   background-color: var(--COLOR-PRIMARY);
   border: none;
@@ -34,12 +35,18 @@ body {
   padding: 2rem;
 }
 
+.btn-back-home:hover,
 .btn-game-begin:hover {
   background-color: var(--COLOR-PRIMARY-800);
 }
 
-.btn-game-begin:hover .angle-icon {
+.btn-game-begin:hover .right-double-angle-icon {
   transform: translateX(25%);
+}
+
+.left-double-angle-icon,
+.right-double-angle-icon {
+  transition: transform 0.2s;
 }
 
 /** Container **/
@@ -107,7 +114,8 @@ blockquote::before,
 blockquote::after,
 nav > a::after,
 .nice-para::before,
-.nice-para::after {
+.nice-para::after,
+.total-score-para::before {
   content: "";
   height: 0.5rem;
   width: 7rem;
@@ -116,6 +124,14 @@ nav > a::after,
 }
 
 /** Option **/
+
+.answer-li {
+  transform: scale(1.05);
+}
+
+li:not(.option-li, .answer-li) {
+  opacity: 0.8;
+}
 
 .option-li:hover {
   transform: scale(1.01);

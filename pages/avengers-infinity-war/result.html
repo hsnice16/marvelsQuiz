@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>marvelsQuiz | Rules are rules</title>
+    <title>marvelsQuiz | Here is your Report Card 😅</title>
 
     <!-- favicon -->
     <link
@@ -57,67 +57,34 @@
         >
       </nav>
 
-      <main class="main px-4 py-2">
+      <main class="main px-1 py-2">
         <img
           class="block mx-auto"
-          src="../../assets/gifs/rules.gif"
-          alt="giphy rules gif"
+          src="../../assets/gifs/result.gif"
+          alt="giphy groot gif"
         />
 
         <div class="fs-lg mb-4 mt-2 text-center">
-          Aha! You think you have watched
-          <em class="block">Captain Marvel</em>
+          Result time for our
+          <em>Avengers: Infinity War</em>
+          fan
         </div>
 
         <p
-          class="align-i-ctr flex flex-direction-col fs-lg justify-c-sb my-3 nice-para text-center"
+          class="align-i-ctr flex flex-direction-col fs-lg justify-c-sb my-3 text-center total-score-para"
         >
           <span class="py-2">
-            <span class="kushan-font-family mx-0p5 text-primary">N</span>ice
+            <span class="kushan-font-family mx-0p5 text-primary">Y</span>our
+            <span class="kushan-font-family mx-0p5 text-primary">T</span>otal
+            <span class="kushan-font-family mx-0p5 text-primary">S</span>core :
+            <span class="text-primary-800"> 10 </span>
           </span>
         </p>
 
-        <section>
-          <h1 class="fs-3 text-center">
-            But before starting to play, read the rules
-            <strong class="text-primary-800">carefully</strong>
-          </h1>
-
-          <ul
-            class="align-i-ctr flex flex-direction-col gap-2p5 my-3 mx-auto max-w-45 py-2"
-          >
-            <li
-              class="align-i-fs bg-white border-r-0p2 border-bottom-solid border-primary flex fs-2 p-1 w-100pct shadow-light"
-            >
-              <i class="fas fa-genderless mt-0p5"></i>
-              <span class="ml-1">You will face 5 Questions </span>
-            </li>
-
-            <li
-              class="align-i-fs bg-white border-r-0p2 border-bottom-solid border-primary flex fs-2 p-1 w-100pct shadow-light"
-            >
-              <i class="fas fa-genderless mt-0p5"></i>
-              <span class="ml-1"
-                >The right answer will give you 2 points, Wrong will add 0 to
-                your total
-              </span>
-            </li>
-
-            <li
-              class="align-i-fs bg-white border-r-0p2 border-bottom-solid border-primary flex fs-2 p-1 w-100pct shadow-light"
-            >
-              <i class="fas fa-genderless mt-0p5"></i>
-              <span class="ml-1"
-                >To clear the Quiz, you will have to answer all correctly</span
-              >
-            </li>
-          </ul>
-
-          <button id="btn-begin-game" class="btn-game-begin translate-y">
-            Let's begin the game
-            <i class="right-double-angle-icon fas fa-angle-double-right"></i>
-          </button>
-        </section>
+        <button id="btn-show-answers" class="btn-game-begin translate-y">
+          Show answers
+          <i class="angle-icon fas fa-angle-double-right"></i>
+        </button>
       </main>
 
       <footer class="grid footer-home justify-c-ctr px-4 py-1">
@@ -164,9 +131,9 @@
 
     <script>
       document
-        .querySelector("#btn-begin-game")
+        .querySelector("#btn-show-answers")
         .addEventListener("click", () => {
-          window.open("question-one.html", "_self");
+          window.open("answers.html", "_self");
         });
     </script>
   </body>
