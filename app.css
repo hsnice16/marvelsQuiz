@@ -143,8 +143,11 @@ li:not(.option-li, .answer-li) {
 }
 
 .kushan-font-family {
-  color: var(--COLOR-PRIMARY);
   font-family: "Kaushan Script", cursive;
+}
+
+.kushan-font-family:not(.span-l, .span-c) {
+  color: var(--COLOR-PRIMARY);
 }
 
 .text-primary-800 {
