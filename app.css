@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 :root {
-  --COLOR-PRIMARY: #3b82f6;
-  --COLOR-PRIMARY-50: #eff6ff;
-  --COLOR-PRIMARY-300: #93c5fd;
-  --COLOR-PRIMARY-800: #1e40af;
+  /** variables coming from  https://poshui-components.netlify.app/css/main.css **/
+
+  --COLOR-PRIMARY: var(--COLOR-BLUE-500);
+  --COLOR-PRIMARY-50: var(--COLOR-BLUE-50);
+  --COLOR-PRIMARY-300: var(--COLOR-BLUE-300);
+  --COLOR-PRIMARY-800: var(--COLOR-BLUE-800);
+
+  --COLOR-TEXT-500: var(--COLOR-SLATE-500);
+  --COLOR-TEXT-700: var(--COLOR-SLATE-700);
 }
 
 html {
@@ -19,16 +24,15 @@ body {
 
 /** Button **/
 
-.btn-back-home:hover .left-double-angle-icon {
-  transform: translateX(-25%);
-}
-
 .btn-back-home,
 .btn-game-begin {
   background-color: var(--COLOR-PRIMARY);
   border: none;
   border-radius: 0.4rem;
+
+  /** variable coming from  https://poshui-components.netlify.app/css/main.css **/
   color: var(--COLOR-WHITE);
+
   display: block;
   font-size: 1.8rem;
   margin: 0 auto 1rem;
@@ -40,10 +44,6 @@ body {
   background-color: var(--COLOR-PRIMARY-800);
 }
 
-.btn-game-begin:hover .right-double-angle-icon {
-  transform: translateX(25%);
-}
-
 .left-double-angle-icon,
 .right-double-angle-icon {
   transition: transform 0.2s;
@@ -52,7 +52,7 @@ body {
 /** Container **/
 
 .container {
-  color: var(--COLOR-SLATE-700);
+  color: var(--COLOR-TEXT-700);
   margin: auto;
   max-width: 120rem;
 }
@@ -94,33 +94,10 @@ body {
   width: 100%;
 }
 
-.link:hover .left-angle-icon {
-  transform: translateX(-25%);
-}
-
-.link:hover .right-angle-icon {
-  transform: translateX(25%);
-}
-
 /** Main **/
 
 .main {
   min-height: 75vh;
-}
-
-/** Main and Nav  **/
-
-blockquote::before,
-blockquote::after,
-nav > a::after,
-.nice-para::before,
-.nice-para::after,
-.total-score-para::before {
-  content: "";
-  height: 0.5rem;
-  width: 7rem;
-  background: var(--COLOR-SLATE-500);
-  display: block;
 }
 
 /** Option **/
@@ -137,28 +114,61 @@ li:not(.option-li, .answer-li) {
   transform: scale(1.01);
 }
 
-/** Utility **/
+/** Overriding **/
 
-.align-i-fs {
-  align-items: flex-start;
+.card {
+  overflow: hidden;
+  width: 33rem;
 }
 
-.border-primary {
-  border-color: var(--COLOR-PRIMARY);
+.stacked-list > li {
+  border-bottom: medium solid var(--COLOR-PRIMARY);
+  padding: 0;
+}
+
+.stacked-list > li.flex {
+  padding: 1rem;
+}
+
+/** Utility **/
+
+.ctr-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.2rem;
+  justify-content: center;
+  margin: 3rem auto;
+  text-align: center;
 }
 
 .kushan-font-family {
-  font-family: "Kaushan Script", cursive;
-}
-
-.text-primary {
   color: var(--COLOR-PRIMARY);
+  font-family: "Kaushan Script", cursive;
 }
 
 .text-primary-800 {
   color: var(--COLOR-PRIMARY-800);
 }
 
-.text-slate-500 {
-  color: var(--COLOR-SLATE-500);
+/** Common **/
+
+nav > a::after,
+.ctr-text::before,
+.ctr-text:not(.total-score-para)::after {
+  background: var(--COLOR-TEXT-500);
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 7rem;
+}
+
+.btn-back-home:hover .left-double-angle-icon,
+.link:hover .left-angle-icon {
+  transform: translateX(-25%);
+}
+
+.btn-game-begin:hover .right-double-angle-icon,
+.link:hover .right-angle-icon {
+  transform: translateX(25%);
 }
