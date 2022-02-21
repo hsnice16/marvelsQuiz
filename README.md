@@ -16,24 +16,29 @@ Are you even a Marvel fan? Let's Check with marvelsQuiz
 
 ## Contains
 
-Currently, it contains screens for the following page
-- Home (https://marvelsquiz.netlify.app/)
+Currently, it contains screens for the following pages
+
+- Home, [marvelsQuiz Home](https://marvelsquiz.netlify.app/)
+
 - Rules for each category
-  + Category One ([Avengers: Infinity War Rules](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/rules.html))
-  + Category Two ([Doctor Strange Rules](https://marvelsquiz.netlify.app/pages/doctor-strange/rules.html))
-  + Category Three ([Captain Marvel Rules](https://marvelsquiz.netlify.app/pages/captain-marvel/rules.html))
+  + Category One, [Avengers: Infinity War Rules](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/rules.html)
+  + Category Two, [Doctor Strange Rules](https://marvelsquiz.netlify.app/pages/doctor-strange/rules.html)
+  + Category Three, [Captain Marvel Rules](https://marvelsquiz.netlify.app/pages/captain-marvel/rules.html)
+
 - Questions for each category
-  + Category One ([Avengers: Infinity War Question](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/question-one.html))
-  + Category Two ([Doctor Strange Question](https://marvelsquiz.netlify.app/pages/doctor-strange/question-one.html))
-  + Category Three ([Captain Marvel Question](https://marvelsquiz.netlify.app/pages/captain-marvel/question-one.html))
+  + Category One, [Avengers: Infinity War Questions](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/question-one.html)
+  + Category Two, [Doctor Strange Questions](https://marvelsquiz.netlify.app/pages/doctor-strange/question-one.html)
+  + Category Three, [Captain Marvel Questions](https://marvelsquiz.netlify.app/pages/captain-marvel/question-one.html)
+
 - Result for each category
-  + Category One ([Avengers: Infinity War Result](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/result.html))
-  + Category Two ([Doctor Strange Result](https://marvelsquiz.netlify.app/pages/doctor-strange/result.html))
-  + Category Three ([Captain Marvel Result](https://marvelsquiz.netlify.app/pages/captain-marvel/result.html))
-- Answer for each category
-  + Category One ([Avengers: Infinity War Answers](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/answers.html))
-  + Category Two ([Doctor Strange Answers](https://marvelsquiz.netlify.app/pages/doctor-strange/answers.html))
-  + Category Three ([Captain Marvel Answers](https://marvelsquiz.netlify.app/pages/captain-marvel/answers.html))
+  + Category One, [Avengers: Infinity War Result](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/result.html)
+  + Category Two, [Doctor Strange Result](https://marvelsquiz.netlify.app/pages/doctor-strange/result.html)
+  + Category Three, [Captain Marvel Result](https://marvelsquiz.netlify.app/pages/captain-marvel/result.html)
+
+- Answers for each category
+  + Category One, [Avengers: Infinity War Answers](https://marvelsquiz.netlify.app/pages/avengers-infinity-war/answers.html)
+  + Category Two, [Doctor Strange Answers](https://marvelsquiz.netlify.app/pages/doctor-strange/answers.html)
+  + Category Three, [Captain Marvel Answers](https://marvelsquiz.netlify.app/pages/captain-marvel/answers.html)
 
 ---
 
