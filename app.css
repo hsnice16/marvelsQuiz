@@ -70,6 +70,15 @@ body {
   min-height: 15vh;
 }
 
+/** Header **/
+
+.btn-theme {
+  background: unset;
+  border: none;
+  color: var(--COLOR-TEXT-700);
+  font-size: 2rem;
+}
+
 /** Link **/
 
 .link {
@@ -174,4 +183,41 @@ nav > a::after,
 .btn-game-begin:hover .right-double-angle-icon,
 .link:hover .right-angle-icon {
   transform: translateX(25%);
+}
+
+/** Dark Theme **/
+
+[data-theme="dark"] {
+  --COLOR-CARD-BG: #2d333b;
+  --COLOR-PRIMARY-50: #22272e;
+  --COLOR-TEXT-700: #adbac7;
+  --COLOR-TEXT-800: #8d97a0;
+}
+
+[data-theme="dark"] :is(.card, .stacked-list li) {
+  background: var(--COLOR-CARD-BG);
+}
+
+[data-theme="dark"] .text-slate-800 {
+  color: var(--COLOR-TEXT-700);
+}
+
+[data-theme="dark"] :is(.link, .text-primary-800) {
+  color: var(--COLOR-TEXT-800);
+}
+
+/** Media Query **/
+
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 60%;
+  }
+
+  .container-question {
+    padding: 0;
+  }
+
+  :is(header, main).px-4 {
+    padding: 2rem;
+  }
 }
